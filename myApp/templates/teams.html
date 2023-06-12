@@ -1,0 +1,25 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Teams</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <h1>Teams By League</h1>
+    <div id="container">
+      {% for leagueName, teamNames in leagueTeams %}
+      <div class="leagueList">
+        <h2 class="league">{{ leagueName }}</h2>
+        <ul>
+          {% for teamName in teamNames %}
+            <li class="team">{{ teamName }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+    </div>
+  </body>
+</html>
+

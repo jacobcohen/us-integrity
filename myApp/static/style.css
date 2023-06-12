@@ -1,0 +1,33 @@
+
+.ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+#container {
+  display: flex;
+  justify-content: space-around;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.leagueList {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.league {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.team {
+  margin-top: 3px;
+}
+
+h1 {
+    color: #333333;
+    text-align: center;
+}
